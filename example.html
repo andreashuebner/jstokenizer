@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>jsTokenizer</title>
+  
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src="jsTokenizer.js"></script>
+  
+  <script>
+    var testText=" 30+4 ";
+    
+    //initiate new Tokenizer object
+    var myTokenizer=new jsTokenizer();
+    myTokenizer.toString();
+    myTokenizer.addToken("Number","\\d+","",number);
+    myTokenizer.addToken("Addition","\\+","",addition);
+    myTokenizer.addToken("Whitespace","\\s","",whitespace);
+    //console.log(myTokenizer);
+    
+    var arrayTokens=myTokenizer.tokenizeText(testText);
+    //console.log(arrayTokens);
+    
+    function number(token) {
+        var tokenlength=token.value.length;
+        console.log(tokenlength);
+        token.row = this.row;
+        token.column = this.column;
+        this.column += tokenlength;
+        return token;
+    }
+    function addition(token) {
+        var tokenlength=token.value.length;
+        console.log(tokenlength);
+        token.row = this.row;
+        token.column = this.column;
+        this.column += tokenlength;
+        return token;
+    }
+    function whitespace(token) {
+        var tokenlength=token.value.length;
+        console.log(tokenlength);
+        token.row = this.row;
+        token.column = this.column;
+        this.column += tokenlength;
+        return token;
+    }
+    
+  </script>
+</body>
+</html>
