@@ -1,4 +1,8 @@
-jstokenizer
-===========
-
-Simple tokenizer written in JavaScript - WORK IN PROGRESS
+<html>
+<head>
+<title>jsTokenizer - Simple JavaScript Tokenizer</title>
+</head>
+<body>
+Hallo
+</body>
+</html>
