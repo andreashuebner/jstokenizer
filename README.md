@@ -1,11 +1,5 @@
-<html>
-<head>
-<title>jsTokenizer - Simple JavaScript Tokenizer</title>
-</head>
-<body>
+
+jsTokenizer - Simple JavaScript Tokenizer<br><br>
 Hallo
 <br>
 Hallo
-
-</body>
-</html>
