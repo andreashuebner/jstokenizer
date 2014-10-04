@@ -1,3 +1,8 @@
+//     jsTokenizer.js 1.0.0
+//     http://www.andrashuebner.com/jstokenizer
+//     (c) 2014 Andras Huebner
+//     jsTokenizer.js may be freely distributed under the MIT license.
+
 /**@constructur*/
 var jsTokenizer=function() {
     //console.log("constructor " + this.constructor);
